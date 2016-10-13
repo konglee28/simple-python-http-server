@@ -17,7 +17,7 @@ class RequestHandler(BaseHTTPRequestHandler):
     do_DELETE = do_GET
         
 def main():
-    port = 80
+    port = 8888
     server = HTTPServer(('', port), RequestHandler)
     server.serve_forever()
  
